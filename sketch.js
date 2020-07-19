@@ -4,8 +4,10 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var ball;
-var log2;
+
+var log2,log1,log3;
 var ground;
+
 function preload(){
 
 }
@@ -25,9 +27,14 @@ function setup() {
 	ground=new Ground(400,680,800,40)
 	ball=new Ball(175,675);
 	
-	Log2=new Bin(650,660,120,250,20);
+	
+	Log2=new Bin(550,660,20,250,20);
+	Log1=new Bin2(650,660,20,250,20);
+	Log3=new Bin3(600,750,250,20,20);
+	
 
-}
+	
+}                                       
 
 
 function draw() {
@@ -37,26 +44,39 @@ function draw() {
   drawSprites();
  ball.display();
  
+ 
  Log2.display();
+ Log1.display();
+ Log3.display();
+
  
  ground.display();
+ 
 }
-
 function keyPressed(){
-if(keyCode===UP_ARROW){
+	if(keyCode===UP_ARROW){
+	
+	Matter.Body.applyForce(ball.body,ball.body.position,{x:105,y:-105});
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	
 
-Matter.Body.applyForce(ball.body,ball.body.position,{x:110,y:-110});
-
-
-}
 
 
 
 
 
 
-
-}
 
 
 
