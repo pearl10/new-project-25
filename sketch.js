@@ -45,10 +45,10 @@ function draw() {
  ball.display();
  
  
- Log2.display();
+ 
  Log1.display();
  Log3.display();
-
+ Log2.display();
  
  ground.display();
  
