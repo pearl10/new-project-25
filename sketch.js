@@ -25,13 +25,13 @@ function setup() {
 	Engine.run(engine);
 	
 	ground=new Ground(400,680,800,40)
-	ball=new Ball(175,675);
+	ball=new Ball(90,675);
 	
 	
-	Log2=new Bin(550,660,250,20,20);
+
 	Log1=new Bin2(650,660,20,250,20);
-	Log3=new Bin2(600,750,20,250,20);
-	
+	Log3=new Bin2(580,750,20,250,20);
+	Log2=new Bin(500,660,250,20,20);
 
 	
 }                                       
