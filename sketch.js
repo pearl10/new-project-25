@@ -29,10 +29,9 @@ function setup() {
 	
 	
 
-	Log1=new Bin2(650,660,20,250,20);
-	Log3=new Bin2(580,750,20,250,20);
-	Log2=new Bin(500,660,250,20,20);
-
+	log1=new Bin(600,660,40,20);
+	log2=new Bin2(550,660,20,40);
+	log3=new Bin2(650,660,20,40)
 	
 }                                       
 
@@ -46,17 +45,17 @@ function draw() {
  
  
  
- Log1.display();
- Log3.display();
- Log2.display();
  
+ log3.display();
+ log2.display();
+ log1.display();
  ground.display();
  
 }
 function keyPressed(){
 	if(keyCode===UP_ARROW){
 	
-	Matter.Body.applyForce(ball.body,ball.body.position,{x:105,y:-105});
+	Matter.Body.applyForce(ball.body,ball.body.position,{x:120,y:-120});
 	
 	
 	}

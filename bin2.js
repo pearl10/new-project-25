@@ -20,7 +20,7 @@ class Bin2 {
       rectMode(CENTER);
       strokeWeight(3);
       stroke("white");
-      fill("white");
+      fill("blue");
      rect(0, -80, 20, 150);
       pop();
     }

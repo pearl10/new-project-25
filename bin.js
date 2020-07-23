@@ -21,7 +21,7 @@ class Bin {
       strokeWeight(3);
       stroke("black");
       fill("blue");
-      image(this.image,0, -80, 150, 150);
+      image(this.image,0, -5, 150, 320);
       pop();
     }
   };
